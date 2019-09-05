@@ -114,6 +114,7 @@ class DoublyLinkedList:
       node.prev.next = node.next
       node.next.prev = node.prev
       self.head.prev = node
+      node.next = self.head
       self.head = node
     
 
